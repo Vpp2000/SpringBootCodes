@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>TABLON ANUNCIOS</h1>
+    {{#bienvenido}}
+        <h2>Bienvenido al portal</h2>
+    {{/bienvenido}}
+
+    {{#anuncios}}
+      <a href="anuncio/{{id}}">  {{nombre}} {{asunto}} </a><br>
+    {{/anuncios}}
+    <a href="enviarAnuncio">NUEVO ANUNCIO</a>
+</body>
+</html>
